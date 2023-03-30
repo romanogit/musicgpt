@@ -1,7 +1,7 @@
 Ubuntu
 
 pip install --upgrade openai
-export OPENAI_API_KEY="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"
+export OPENAI_API_KEY="<YOUR OPENAI_API_KEY>" 
 
 openai api fine_tunes.list
 
