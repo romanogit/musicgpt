@@ -1,0 +1,75 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #181b21;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: -0.23px;
+}
+
+.questionPanel {
+	height: 70px;
+    overflow:auto; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+	padding: 1rem;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background-color: #fff;
+	flex-direction: column-reverse;
+}
+
+.conversationPanel {
+	height: 600px;
+    overflow:auto; 
+    margin-left: auto;
+    margin-right: auto;
+        width: 800px;
+        padding: 1rem;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background-color: #fff;
+	flex-direction: column-reverse;
+    font-size: .75rem;
+}
+
+.conversationMessageItem--left .messageValue {
+	float: left;
+	text-align: left;
+	margin: 0 0 0 1rem;
+	color: #fff;
+	background-color: #4870df;
+    border-radius: 4px;
+    padding: 0.05rem;
+}
+
+.conversationMessageItem--left .messageValue::before {
+	content: '';
+	position: absolute;
+	top: 14px;
+	left: -8px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 10px 6px 0;
+	border-color: transparent #4870df transparent transparent;
+}
+
+.conversationMessageItem--right .messageValue {
+	float: right;
+	text-align: right;
+	margin: 0 1rem 0 0;
+	background-color: #40d47e;
+    border-radius: 4px;
+    padding: 0.05rem;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+textarea {
+    width: 700px
+}

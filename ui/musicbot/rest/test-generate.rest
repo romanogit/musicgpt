@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/generate-response
+Content-Type: application/json
+
+{
+    "prompt": "Which member of Kiss looked like a cat?",
+    "model": "davinci:ft-personal-2023-03-30-16-35-37"
+}
