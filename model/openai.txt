@@ -26,7 +26,7 @@ Wrote modified file to `music_prepared (1).jsonl`
 Feel free to take a look!
 
 Now use that file when fine-tuning:
-> openai api fine_tunes.create -t "music_prepared (1).jsonl"
+openai api fine_tunes.create -t "music_prepared.jsonl" -m davinci
 
 After you’ve fine-tuned a model, remember that your prompt has to end with the indicator string ` ->` for the model to start generating completions, rather than continuing with the prompt. Make sure to include `stop=["\n"]` so that the generated texts ends at the expected place.
 Once your model starts training, it'll approximately take 6.51 minutes to train a `curie` model, and less for `ada` and `babbage`. Queue will approximately take half an hour per job ahead of you.
